@@ -5,7 +5,7 @@ from django.shortcuts import render
 from django.http import HttpResponse
 
 def index( request ):
-    return HttpResponse( 'Hello word, You are at the base index.' )
+    return render (request, 'base/index.html')
 
 def login(request):
     return HttpResponse('You are in login page')
