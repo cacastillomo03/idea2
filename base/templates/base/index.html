@@ -1,64 +1,69 @@
-
 <!DOCTYPE html>
 {% load static %}
-<html lang = "es">
-    <head>
-        <title>BancoSaintPatrick</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="Description" content="En el home banking vamos a poder ingresar con seguridad por usuario y visualizar nuestro saldo. También vamos a poder realizar transacciones a otras tarjetas"/>
-        <meta name="robots" content="index_follow"/>
-        <link rel="stylesheet" type="text/css" href="{% static 'css/inicio.css' %}" />
-        <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
-        
-        <!-- Inserción de fondos de imagen para Django -->
-        <style>
-            .header{
-                background-image: linear-gradient(to top, rgb(160,140,209,0.5)0%, rgb(160,140,209,0.5)100% ),url("{% static 'img/img_cabecera.jpg' %}");
-            }
-        </style>
+<html lang="es">
+
+<head>
+    <title>BancoSaintPatrick</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description"
+        content="En el home banking vamos a poder ingresar con seguridad por usuario y visualizar nuestro saldo. También vamos a poder realizar transacciones a otras tarjetas" />
+    <meta name="robots" content="index_follow" />
+    <link rel="stylesheet" type="text/css" href="{% static 'css/inicio.css' %}" />
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- Inserción de fondos de imagen para Django -->
+    <style>
+        .header {
+            background-image: linear-gradient(to top, rgb(160, 140, 209, 0.5)0%, rgb(160, 140, 209, 0.5)100%),
+            url("{% static 'img/img_cabecera.jpg' %}");
+        }
+    </style>
 
 
 
-    </head>
-    <body>
-        
-        <header class="header" id="inicioo">
-            <div > <a href="../Login/index logo.html"><button  class="ingresar" >Ingresar Ahora</button></a></div>
-            <h1 class="slogan"> <span style="color:black">B.S Patrick</span></h1>
-            <nav class="menu_navegacion ">
-                <img src="{% static 'img/logo.png'%}" alt="" class="logo">
-                <a href="#">Inicio</a>
-                <a href="#">Ayuda</a>
-                <a href="#">Puntos de atenciòn</a>
-                <a href="#">Salir</a>    
-            </nav>
-            <div >
-                <h1 class="tittle">Banco Saint Patrick</h1>
-                <p class="header-text">Realiza pagos, transferencias, consultas y gestiona productos Banco Saint Patrick desde tu computador de una manera fácil y segura las 24 horas.</p>
+</head>
+
+<body>
+
+    <header class="header" id="inicioo">
+        <div> <a href="../Login/index logo.html"><button class="ingresar">Ingresar Ahora</button></a></div>
+        <h1 class="slogan"> <span style="color:black">B.S Patrick</span></h1>
+        <nav class="menu_navegacion ">
+            <img src="{% static 'img/logo.png'%}" alt="" class="logo">
+            <a href="#">Inicio</a>
+            <a href="#">Ayuda</a>
+            <a href="#">Puntos de atenciòn</a>
+            <a href="#">Salir</a>
+        </nav>
+        <div>
+            <h1 class="tittle">Banco Saint Patrick</h1>
+            <p class="header-text">Realiza pagos, transferencias, consultas y gestiona productos Banco Saint Patrick
+                desde tu computador de una manera fácil y segura las 24 horas.</p>
+        </div>
+    </header>
+
+    <footer id="contactos">
+        <div class="contenedor footer-content">
+            <div class="contac-us">
+                <h2 class="brand"> Banco Saint Patrick</h2>
+
             </div>
-        </header>
-        
-        <footer id="contactos" >
-            <div class="contenedor footer-content">
-                <div class="contac-us">
-                    <h2 class="brand"> Banco Saint Patrick</h2>
-                    
-                </div>
-                <div class="socialmedia">
-                    <a href="" class="socialmedia-icon">
-                       <i class='bx bxl-facebook'> </i>  
-                    </a>
-                    <a href="." class="socialmedia-icon">
-                      <i class='bx bxl-instagram' ></i>   
-                    </a> 
-                    <a href="." class="socialmedia-icon">
-                     <i class='bx bxl-twitter' ></i> 
-                     
-                    </a>
-                </div>
+            <div class="socialmedia">
+                <a href="" class="socialmedia-icon">
+                    <i class='bx bxl-facebook'> </i>
+                </a>
+                <a href="." class="socialmedia-icon">
+                    <i class='bx bxl-instagram'></i>
+                </a>
+                <a href="." class="socialmedia-icon">
+                    <i class='bx bxl-twitter'></i>
+
+                </a>
             </div>
-            <div class="line"></div>
-        </footer>
-    </body>
+        </div>
+        <div class="line"></div>
+    </footer>
+</body>
+
 </html>
