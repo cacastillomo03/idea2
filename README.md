@@ -20,7 +20,7 @@ Python 3.8.8
 <p> Ya teniendo activado nuestro entorno virtual, la primera vez es necesario ejecutar la siguiente instrucción, para que los archivos necesarios sean instalados en el entorno virtual: </p>
 <blockquote> pip install -r requirements.txt </blockquote>
 <li type="circle">Ejecución del proyecto Django</li>
-<p> Finalmente, para ejecutar el servidor en Django, debe dirigirse a la carpeta donde se encuentre el archivo "manage.py" desde el CMD, en ingresar lo siguiente:<\p>
+<p> Finalmente, para ejecutar el servidor en Django, debe dirigirse a la carpeta donde se encuentre el archivo "manage.py" desde el CMD, en ingresar lo siguiente:</p>
 <blockquote> python manage.py runserver </blockquote>
 
 </ul>
