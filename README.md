@@ -12,7 +12,7 @@ Para la creación del backend se está haciendo uso uno de los frameworks mas po
 Se debe acceder a la pagina oficial de Python  <a href="enlace.html">https://www.python.org/ </a> y hacer la descarga del mismo, aconsejando descargar la versión 3.8.8, que es con la que se está trabajando actualmente.
 Python 3.8.8
 <li type="circle">Instalación de entorno virtual para Python</li>
-<p> Una buena práctica para la elaboración de proyectos en Python, es la creación de un entorno virtual por cada proyecto que se realize, esto con el fin de no tener biblotecas, librerias innecesarias en los archivos. <\p>
+<p> Una buena práctica para la elaboración de proyectos en Python, es la creación de un entorno virtual por cada proyecto que se realize, esto con el fin de no tener biblotecas, librerias innecesarias en los archivos. </p>
 <p> La creación del entorno virtual puede realizarse accediendo a la carpeta del proyecto desde cmd e ingresando:<\p>
 <blockquote> python -m venv <nombre-entorno-virtual> </blockquote>
 <p> Posteriormente se debe activar el entorno virtual ingresando </p>
