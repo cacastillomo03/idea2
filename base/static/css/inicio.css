@@ -2,38 +2,40 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    max-width: 100%;
+    max-height: 100%
 }
 root{
-    scroll-behavior: smooth;
+     scroll-behaivor: smooth;
 }
 /* cabecesra de la barra de navegacion*/
 .header{
-    height: 80vh;
-    /* background-image: linear-gradient(to top, rgb(160,140,209,0.5)0%, rgb(160,140,209,0.5)100% ),url("{% static 'img/logo.png' %}"); */
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;  
-}
+     height: 80vh;
+     background-image: linear-gradient(to top, rgb(160,140,209,0.5)0%, rgb(160,140,209,0.5)100% ),url(../Imagenes/Cabecera/img_cabecera.jpg);
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-attachment: fixed;
+     background-position: center;  
+     }
 
     
 /* configuracion del titulo del header*/
 .tittle{
-    color: white;
-    margin-top: 14%;
-    margin-left: 5%;
-    font-size: 60px;  
+     color: white;
+     margin-top: 14%;
+     margin-left: 5%;
+     font-size: 60px;  
 }
 /* configuracion del texto del header*/
 .header-text{
-    color: white;
-    margin-left: 5%;
-    width: 30%;
-    height: 40%;
-    margin-top: 1%;
-    font-family: monospace;
-    text-align: justify;
-    font-size: 15px;
+     color: white;
+     margin-left: 5%;
+     width: 30%;
+     height: 40%;
+     margin-top: 1%;
+     font-family: monospace;
+     text-align: justify;
+     font-size: 15px;
 }
 /* configuracion texto al lado del logo*/
 .slogan{
@@ -62,8 +64,7 @@ root{
     justify-content: space-around;
     align-items: center;
     box-shadow: 0 0 6px rgba(0,0,0, .5);
-
-    
+   
 }
 
 .menu_navegacion a{
@@ -92,68 +93,903 @@ root{
     font-weight: bold; 
     
 }
-footer{
-    background: white;
-    padding-bottom: 0.1px;
+/* ESTRUCTURA DEL MAIN VENTANA LOGIN*/
+    .form-login h5{
+         font-size: 20px;
+    }
+ .form-login {
+         display: flex;
+         align-items: center;
+         flex-direction: column;
+         position: absolute;
+         top: 14%;
+         left: 15%;
+         width: 400px;
+         height: 420px;
+         background-color:black ;
+         margin:auto;
+         justify-content: space-around;
+         box-shadow: 7px 13px 37px #000;
+         padding: 20px 30px;
+         border-top: 4px solid #017bab;
+         color: white;
+    }
+    
+  .content-form{
+         width: 100%;
+         height: 50px;
+         max-width: 400px;
+         position: relative;
+         overflow: hidden;
+         background: none;
+    }
+ 
+
+  .content-form input[type="text"]{
+         width: 100%;
+         height: 100%;
+         background:none;
+         color: white;
+         border: none;
+         padding-top:  20px;
+         outline: 0px;
+    }
+
+  .content-form .lbl{
+         position: absolute;
+         bottom: 0;
+         left: 0;
+         width: 100%;
+         height: 100%;
+          pointer-events: none;
+         border-bottom: 1px solid white;
+    }
+
+  .content-form .lbl:after{
+         content: '';
+         position: absolute;
+         left: 0;
+         bottom: -1px;
+         width: 100%;
+         height: 100%;
+         border-bottom: 4px solid yellow;
+         transform: translateX(-100%);
+         transition: all 0.3s ease;
+    }
+
+  .text-name{
+         position: absolute;
+         bottom: 5px;
+         left: 0;
+         transition: all 0.3s ease;
+         color: white;
+    }
+
+
+
+  .content-form input[type="text"]:focus + .lbl .text-name, .content-form input[type="text"]:valid + .lbl .text-name{
+         transform: translateY(-110%);
+         font-size: 16px;
+         color: yellow; 
+    }
+         
+  .content-form input[type="text"]:focus + .lbl:after, .content-form input[type="text"]:valid + .lbl:after {
+          transform: translateX(0%);  
+    }
+ 
+  
+
+  .botton input[type="submit"]{
+         display: flex;
+         font-family: arial;
+         font-size: 15px;
+         background: yellow;
+         align-items: center;
+         height: 40px;
+         padding-left: 30px;
+         padding-right: 35px;
+         text-align: center;
+         border: none;
+         border-radius: 6px;
+         cursor: pointer;
+    }
+         
+  .botton input[type="submit"]:hover{
+         font-weight: bold;
+    }
+
+  .form-login p{
+         height: 40px;    
+         text-align: center;
+         border-bottom: 1px solid;
+    }
+
+  .form-login a{
+         color:white;
+         text-decoration: none;
+         font-size: 14px;
+
+    }
+
+  .form-login a:hover{
+         text-decoration: underline;
+
+    }
+    
+    
+/*ESTRUCTURA DE MAIN VENTANA NUEVA TRANSACCION */
+
+.img-nuevatransaccion{
+      position: absolute;
+      top: 20%;
+      right: 3%;
+      width: 30%;
+      height: 55%;
+}
+
+.table-tittle{
+      position: absolute;
+      top: 15%;
+      display: flex;
+      align-items: center;
+      background-color: black;
+      width: 167.5%;
+      height: 50px;
+      color: white;  
+}
+.table-tittle h5{
+     margin-left: 10px
     
 }
 
 
-.footer-content{
+
+.contenedor-form {
+     width: 35%;
+     height: 55%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     background: black;
+     flex-direction: column;
+     position: absolute;
+     left: 20%;
+     top: 20%;
+     justify-content:space-around;
+}
+.content-form{
+    
+     width: 100%;
+     height: 50px;
+     max-width: 400px;
+     position: relative;
+     overflow: hidden;
+     background: none;
+}
+ 
+
+.content-form input[type="text"]{
+     width: 100%;
+     height: 100%;
+     background:none;
+     color: white;
+     border: none;
+     padding-top:  20px;
+     outline: 0px;
+} 
+
+.content-form .lbl{
+     position: absolute;
+     bottom: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     pointer-events: none;
+     border-bottom: 1px solid white;
+}
+
+.contenedor-form .lbl:after{
+     content: '';
+     position: absolute;
+     left: 0;
+     bottom: -1px;
+     width: 100%;
+     height: 100%;
+     border-bottom: 4px solid yellow;
+     transform: translateX(100%);
+     transition: all 0.3s ease;
+}
+
+.text-name{
+     position: absolute;
+     bottom: 5px;
+     left: 0;
+     transition: all 0.3s ease;
+     color: white;
+       
+}
+
+.content-form input[type="text"]:focus + .lbl .text-name, .content-form input[type="text"]:valid + .lbl .text-name{
+     transform: translateY(-110%);
+     font-size: 16px;
+     color: yellow; 
+    
+}
+
+
+
+.botton-form .botton-form_input{
+     display: flex;
+     top: 83%;
+     padding-left: 50px;
+     padding-right: 50px;
+     height: 40px;
+     text-align: center;
+     align-items: center;
+     background:yellow;
+     border-radius: 10px;
+     border-style: none;
+     cursor: pointer;
+     font-family: arial;
+     font-size: 15px; 
+}
+
+.botton-form .botton-form_input:hover{
+    font-weight: bold;
+}
+
+.content-form input[type="text"]:focus + .lbl:after, .content-form input[type="text"]:valid + .lbl:after {
+  transform: translateX(0%);  
+}
+
+.text-header{
+      
+      display: flex;
+      align-items: center;
+      align-items: center;
+      position: absolute;
+      text-align: left;
+      margin-top: 0;
+      width: 100%;
+      height: 30px;   
+      background:black;   
+}
+.subtittle{
+      color: black;
+      width: 100%;
+      height: 30px;  
+      background: bisque;
+      position: absolute;
+      margin-top: 30px;  
+      text-align: left;
+      display: flex;
+      align-items: center;
+      align-items: center;
+    
+}
+.cuestion{
+      color: black;
+      width: 60%;
+      margin-top: 17%;
+      margin-left: 20px;  
+}
+
+    
+.contenido-ventana , .text-header, .subtittle, .cuestion {
+      font-family: monospace;
+      font-size: 15px;
+       
+}  
+
+.contenedor-ventana {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      top: 0;
+      left: 0;
+      position: fixed;
+      padding: 20px;
+      z-index: 100;
+      transform: translate(210%);
+      transition: transform .1s ease-in-out;
+      color: white;
+      width: 100vw;
+      height: 100vh;
+      background: rgba(0,0,0,0.4);
+    
+   
+   
+}
+.contenido-ventana_Ntransaccion{
+      position: fixed;
+      top: 18%;
+      left: -10%;
+      border: 1px solid black;
+      width: 45%;
+      height: 40%;
+      position: relative;
+      background: white;
+}
+
+.spread {
+      transform: translate(0%);
+}
+
+
+.contenido-ventana_Ntransaccion button{
+      width: 70px;
+      height: 40px;
+      margin: 10px;
+      border: none;
+      cursor: pointer;
+      color: black; 
+}
+
+
+.close{
+      position: absolute;
+      top: 65%;
+      right: 25%;
+      background: yellow;
+}
+
+.btn2{
+      position: absolute;
+      top: 65%;
+      right: 10%;
+}
+
+
+/*ESTRUCTURA DE MAIN VENTANA  TRANSACCIONES */
+
+.table-fixed tbody{
+height: 230px;
+overflow-y: auto;
+width: 100%;
+}
+.table-fixed thead,
+.table-fixed tbody,
+.table-fixed td,
+.table-fixed th{
+    display: block;
+}
+
+.table-fixed tbody td,
+.table-fixed thead > tr > th{
+    float: left;
+    border-bottom-width: 0;
+}
+.table-tittle{
+    display: flex;
+    top: -17.5%;
+    align-items: center;
+    background-color: black;
+    height: 50px;
+    color: white;  
+}
+.content-tbody{
+    background: white;
+    
+}
+.content-tr th{
+    width: 120px;
+    
+        
+}
+.content-tbody td{
+    width: 120px;      
+}
+.content-table{
+    position: absolute;
+    top: 29%;
+    left: 5%;
+    width: 55%;
+    height: 45%;
+    border: 1px;  
+    background:white;
+}
+
+.table{
+    
+    box-shadow: 0 0 6px rgba(0,0,0, .2);
+    
+   
+}
+.contenedor-ima{
+    width: 40%;
+    height: 40%;
+}
+.img-historialtransacciones{
+    position: absolute;
+    top: 21%;
+    right: 3%;
+    width: 30%;
+    height: 53%;
+}
+
+.a{
+    width: 10%;
+    height: 40px;
+    margin: 10px;
+    border: none;
+    cursor: pointer;
+    color: black; 
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    background: yellow;  
+}
+
+.text-header{
     display: flex;
     align-items: center;
-    flex-wrap: wrap;
-    padding-top: 60px;
-    padding: 40px;
+    align-items: center;
+    position: absolute;
+    text-align: left;
+    margin-top: 0;
+    width: 100%;
+    height: 30px;   
+    background: black;   
 }
-.contac-us{
-    width: 40%;
-    color: white;
-}
-.brand{
+.subtittle{
     color: black;
-    font-weight: 500;
-    font-size: 30px;
-}
-
-.socialmedia{
-   
-    width: 50%;
+    width: 100%;
+    height: 30px;  
+    background: bisque;
+    position: absolute;
+    margin-top: 30px;  
+    text-align: left;
     display: flex;
-    justify-content: flex-end;
+    align-items: center;
+    align-items: center;
+    
 }
-.socialmedia-icon{
-    color: blueviolet;
-    display: inline-block;
-    margin-left: 20px;
-    width: 40px;
-    height: 40px;
-    border: 1px solid black;
-    border-radius: 50%;
+.cuestion{
+    color: black;
+    width: 60%;
+    margin-top: 17%;
+    margin-left: 20px;  
+}
+
+    
+.contenido-ventana , .text-header, .subtittle, .cuestion {
+    font-family: monospace;
+    font-size: 15px
+    
+   
+   
+}  
+
+.contenedor-ventana {
+    display: flex;
+    justify-content: center;
     text-align: center;
-    background:bottom;
+    top: 0;
+    left: 0;
+    position: fixed;
+    padding: 20px;
+    z-index: 100;
+    transform: translate(210%);
+    transition: transform .1s ease-in-out;
+    color: white;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.4);
+    
+   
    
 }
-.socialmedia-icon:hover{
+.contenido-ventana{
+    position: fixed;
+    top: 30%;
+    border: 1px solid black;
+    width: 45%;
+    height: 40%;
+    position: relative;
     background: white;
-    color: black;
-}
-.socialmedia-icon i{
-    
-    font-size: 30px;
-    line-height: 40px;
-    
-}     
-
-.line{
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-    height: 2px;
-    background: black;
-    margin-bottom: 60px;
 }
 
+.spread {
+    transform: translate(0%);
+}
+
+
+.contenido-ventana button{
+    width: 70px;
+    height: 40px;
+    margin: 10px;
+    border: none;
+    cursor: pointer;
+    color: black; 
+}
+
+
+.close{
+    position: absolute;
+    top: 65%;
+    right: 25%;
+    background: yellow;
+}
+
+.btn2{
+    position: absolute;
+    top: 65%;
+    right: 10%;
+}
+/*ESTRUCTURA MAIN VENTANA VER SALDO*/
+
+
+/*FOOTER DEL APLICATIVO*/
+
+ul{
+    
+   position: absolute;
+   top: 45px;
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+}
+
+.saldo{
+    color: white;
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    width: 50%;
+    height: 50%;
+    box-shadow: 0 0 6px rgba(0,0,0, .5);
+    
+        
+}
+.saldo_tittle{
+    padding: 10px;
+    background-color: black;
+}
+.content-list a {
+    padding: 55px;
+    text-decoration: none;
+    color:  black; 
+}
+.content-cajas{
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-around
+    
+}
+.content-cajas input{
+    height: 40px;
+    border-style: none;
+    background: buttonface;
+    border-radius: 6px;
+    border-bottom: black;
+}
+.content-cajas button{
+    position: absolute;
+    top: 70%;
+    right: 8%;
+    height: 40px;
+    width: 20%;
+    background:yellow;
+    border-radius: 10px;
+    border-style: none;
+    cursor: pointer;
+    font-family: arial;
+    font-size: 15px;
+}
+.content-cajas button:hover{
+  font-weight: bold; 
+    
+}
+
+  footer{
+         background: white;
+         padding-bottom: 0.1px;
+    
+    }
+
+
+  .footer-content{
+         display: flex;
+         align-items: center;
+         flex-wrap: wrap;
+         padding-top: 60px;
+         padding: 40px;
+    }
+    
+  .contac-us{
+         width: 40%;
+         color: white;
+    }
+    
+  .brand{
+         color: black;
+         font-weight: 500;
+         font-size: 30px;
+    }
+
+  .socialmedia{
+   
+         width: 50%;
+         display: flex;
+         justify-content: flex-end;
+    }
+  .socialmedia-icon{
+         color: blueviolet;
+         display: inline-block;
+         margin-left: 20px;
+         width: 40px;
+         height: 40px;
+         border: 1px solid black;
+         border-radius: 50%;
+         text-align: center;
+         background:bottom;
+   
+    }
+  .socialmedia-icon:hover{
+         background: white;
+         color: black;
+    }  
+  .socialmedia-icon i{
+         font-size: 30px;
+         line-height: 40px;
+    }     
+
+  .line{
+         width: 90%;
+         max-width: 1200px;
+         margin: 0 auto;
+         height: 2px;
+         background: black;
+         margin-bottom: 60px;
+    }
+
+/* RESPONSIVE VENTANA INICIO */ 
+
+@media screen and (max-width:1200px){
+  .menu_navegacion{
+          width: 100vw;
+          height: 20%;
+    }
+  .menu_navegacion a{
+         font-size: 15px;
+         width: 70%;
+         left: 20px;
+    }
+  .logo{
+         max-width: 50px;
+         max-height: 60px;
+         top: 25px;
+         left: 10px;
+    }
+     
+  .slogan{
+         font-size: 30px;
+         width: 80%;
+         margin-top: 18px;
+         margin-left: 20px;
+    }
+     
+  .ingresar{
+         max-width: 20%;
+         max-height: 30%;
+         font-size: 80%;
+         top: 5%;
+         cursor: pointer;
+    }
+  .ingresar:hover{
+         font-weight: bold;
+     }
+     
+
+}
+
+@media screen and (max-width:750px){
+  .menu_navegacion{
+          width: 100vw;
+          height: 20%;
+          
+    }
+  .menu_navegacion a{
+         font-size: 10px;
+         width: 50%;
+         left: 20px;
+    }
+  .logo{
+         max-width: 30px;
+         max-height: 50px;
+         top: 35px;
+         left: 3px;
+    }
+     
+  .slogan{
+         font-size: 20px;
+         width: 50%;
+         margin-top: 20px;
+         margin-left: 15px;
+    }
+     
+  .ingresar{
+         max-width: 10%;
+         max-height: 30%;
+         font-size: 70%;
+         top: 5%;
+    }
+
+}
+
+/* RESPONSIVE VENTANA LOGIN*/
+
+@media screen and (max-width:1200px){
+  .menu_navegacion{
+          width: 100vw;
+          height: 20%;
+          
+    }
+  .menu_navegacion a{
+         font-size: 15px;
+         width: 70%;
+         left: 20px;
+    }
+  .logo{
+         max-width: 50px;
+         max-height: 50px;
+         top: 25px;
+         left: 10px;
+    }
+     
+  .slogan{
+         font-size: 30px;
+         width: 80%;
+         margin-top: 18px;
+         margin-left: 20px;
+    }
+     
+  .ingresar{
+         max-width: 20%;
+         max-height: 30%;
+         font-size: 80%;
+         top: 5%;
+         cursor: pointer;
+    }
+  .ingresar:hover{
+         font-weight: bold;
+    }
+     
+  .form-login{
+         top: 17%;
+    }
+     
+
+}
+
+@media screen and (max-width:750px){
+  .menu_navegacion{
+          width: 100vw;
+          height: 15%;
+          
+    }
+  .menu_navegacion a{
+         font-size: 10px;
+         width: 50%;
+         left: 20px;
+    }
+  .logo{
+         max-width: 30px;
+         max-height: 50px;
+         top: 22px;
+         left: 3px;
+    }
+     
+  .slogan{
+         font-size: 20px;
+         width: 50%;
+         margin-top: 20px;
+         margin-left: 15px;
+         top: 11px;
+    }
+     
+  .ingresar{
+         max-width: 10%;
+         max-height: 30%;
+         font-size: 70%;
+         top: 3%;
+    }
+  .form-login{
+         left: 40px;
+         top: 13.5%;
+    }
+
+}
+
+/* RESPONSIVE VENTANA NUEVA TRANSACCION */
+
+@media screen and (max-width:1200px){
+  .menu_navegacion{
+         width: 100vw;
+         height: 20%;
+    }
+  .menu_navegacion a{
+         font-size: 15px;
+         width: 70%;
+         left: 20px;
+   }
+  .logo{
+         max-width: 50px;
+         max-height: 60px;
+         top: 25px;
+         left: 10px;
+    }
+     
+  .slogan{
+         font-size: 30px;
+         width: 80%;
+         margin-top: 18px;
+         margin-left: 20px;
+   }
+     
+  .ingresar{
+         max-width: 20%;
+         max-height: 30%;
+         font-size: 80%;
+         top: 5%;
+         cursor: pointer;
+    }
+  .ingresar:hover{
+         font-weight: bold;
+    }
+     
+  .contenedor-form{
+         width: 40%;
+         left: 10%;
+    }
+ 
+}
+
+@media screen and (max-width:750px){
+  .menu_navegacion{
+          width: 100vw;
+          height: 15%;
+          
+    }
+  .menu_navegacion a{
+         font-size: 10px;
+         width: 50%;
+         left: 20px;
+         padding: 0 8px;
+    }
+  .logo{
+         max-width: 30px;
+         max-height: 50px;
+         top: 20px;
+         left: 3px;
+    }
+     
+  .slogan{
+         font-size: 20px;
+         width: 50%;
+         margin-top: 10px;
+         margin-left: 15px;
+    }
+     
+  .ingresar{
+         max-width: 10%;
+         max-height: 30%;
+         font-size: 70%;
+         top: 3%;
+    }
+     
+  .img-nuevatransaccion{
+         transform: translate(110%);
+    }
+     
+  .contenedor-form{
+         width: 90%;
+         left: 25px;
+    }
+
+}
+
+/*RESPONSIVE VENTANA TRANSACCIONES*/
 
 @media screen and (max-width:1200px){
     .menu_navegacion{
@@ -194,24 +1030,41 @@ footer{
          font-weight: bold;
      }
      
-
+     .content-table{
+         width: 100%;
+         left: 5px;
+     }
+     
+     .content-tr th{
+         width: 75px;
+         padding: 0 4px;
+         font-size: 12px;
+     }
+     
+     .content-tbody  td{
+         width: 75px; 
+         font-size: 9px;
+         padding:2px;
+     }
+      
 }
 
 @media screen and (max-width:750px){
     .menu_navegacion{
           width: 100vw;
-          height: 20%;
+          height: 15%;
           
      }
      .menu_navegacion a{
          font-size: 10px;
          width: 50%;
          left: 20px;
+         padding: 0 8px;
      }
      .logo{
          max-width: 30px;
          max-height: 50px;
-         top: 35px;
+         top: 22px;
          left: 3px;
      }
      
@@ -220,13 +1073,163 @@ footer{
          width: 50%;
          margin-top: 20px;
          margin-left: 15px;
+         top: 11px;
      }
      
      .ingresar{
          max-width: 10%;
          max-height: 30%;
          font-size: 70%;
+         top: 3%;
+     }
+     
+     .img-historialtransacciones{
+         transform: translate(110%);
+     }
+     
+     .content-table{
+         width: 95%;
+         left: 5px;
+     }
+     
+     .content-tr th{
+         width: 75px;
+         padding: 0 4px;
+         font-size: 12px;
+     }
+     
+     .content-tbody  td{
+         width: 75px; 
+         font-size: 9px;
+         padding:2px;
+       
+}
+
+
+     
+     
+     
+     
+
+}
+
+
+/* RESPONSIVE VENTANA VER SALDO*/
+
+@media screen and (max-width:1200px){
+    .menu_navegacion{
+          width: 100vw;
+          height: 20%;
+          
+          
+
+
+     }
+     .menu_navegacion a{
+         font-size: 15px;
+         width: 70%;
+         left: 20px;
+     }
+     .logo{
+         max-width: 50px;
+         max-height: 60px;
+         top: 25px;
+         left: 10px;
+     }
+     
+     .slogan{
+         font-size: 30px;
+         width: 80%;
+         margin-top: 18px;
+         margin-left: 20px;
+     }
+     
+     .ingresar{
+         max-width: 20%;
+         max-height: 30%;
+         font-size: 80%;
          top: 5%;
+         cursor: pointer;
+     }
+     .ingresar:hover{
+         font-weight: bold;
+     }
+     .saldo{
+         width: 60%;
+     }
+     
+     .content-list{
+         width: 100%;
+         
+     }
+     .content-list a{
+         padding: 0 29px;
+     }
+     
+     .content-cajas{
+         width: 100%;
+     }
+     
+     .content-cajas input{
+         width: 30%;
+     }
+     
+     
+     
+
+}
+
+@media screen and (max-width:750px){
+    .menu_navegacion{
+          width: 100vw;
+          height: 15%;
+          
+     }
+     .menu_navegacion a{
+         font-size: 10px;
+         width: 50%;
+         left: 20px;
+         padding: 0 8px;
+     }
+     .logo{
+         max-width: 30px;
+         max-height: 50px;
+         top: 20px;
+         left: 3px;
+     }
+     
+     .slogan{
+         font-size: 20px;
+         width: 50%;
+         margin-top: 10px;
+         margin-left: 15px;
+     }
+     
+     .ingresar{
+         max-width: 10%;
+         max-height: 30%;
+         font-size: 70%;
+         top: 3%;
+     }
+     
+     .saldo{
+         width: 90%;
+     }
+     
+     .content-list{
+         width: 100%;
+         
+     }
+     .content-list a{
+         padding: 0 17px;
+     }
+     
+     .content-cajas{
+         width: 100%;
+     }
+     
+     .content-cajas input{
+         width: 30%;
      }
 
 }
