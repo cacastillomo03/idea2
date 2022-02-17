@@ -1,3 +1,4 @@
+from cgitb import html
 from django.shortcuts import render
 
 # Create your views here.
@@ -7,14 +8,17 @@ from django.http import HttpResponse
 def index( request ):
     return render (request, 'base/index.html')
 
-def login(request):
-    return HttpResponse('You are in login page')
+def login (request):
+    return render (request,'base/login.html')
+
+def inicio (request):
+    return render (request,'base/inicio.html')
 
 def new_transaction(request):
-    return HttpResponse('You are in new transaction')
+    return  render (request, 'base/new_transaction.html')
 
-def transactions(request):
-    return HttpResponse('You are in TRANSACTION')
+def transaction(request):
+    return render (request, 'base/transaction.html')
 
-def see_balance(request):
-    return HttpResponse('You are in BALANCE')
+def versaldo(request):
+    return render(request,'base/versaldo.html')

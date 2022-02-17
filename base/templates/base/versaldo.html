@@ -1,0 +1,27 @@
+{% extends 'base/index.html' %}
+{% load static %}
+
+
+{% block main %}
+<main class="contenedor-main">
+    <section class="section-content">
+        <aside class="saldo">
+             <h4 class="saldo_tittle">Ver Saldo Del Producto</h4>
+             <ul>
+                 <li class="content-list" >
+                     <a href="">Tipo Producto</a>
+                     <a href="">Numero Producto</a>
+                     <a href="">Saldo  Producto</a>
+                 </li>
+             </ul>
+             <form class="content-cajas">
+                  <input type="text" value="Cuenta de Ahorros"  disabled/>
+                  <input type="text"  value=" # " disabled/>
+                  <input type="text"  value=" $  " disabled/>
+                  <button> <a href="">Ir a Transaciones</a></button>
+              
+             </form>
+        </aside>
+    </section>
+</main>
+{% endblock %}

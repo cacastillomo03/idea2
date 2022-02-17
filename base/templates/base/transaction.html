@@ -1,0 +1,120 @@
+{% extends 'base/index.html'%}
+{% load static %}
+
+{% block header%}
+        <header class="header" id="inicioo">
+            <div > <a href="#"><button  class="ingresar" >Cerrar Sesion </button></a></div>
+            <h1 class="slogan"> <span style="color:black">B.S Patrick</span></h1>
+            <nav class="menu_navegacion ">
+                <img src="{% static 'img/logo.png' %}" alt="" class="logo">
+                <a href="#">Inicio</a>
+                <a href="#">Ayuda</a>
+                <a href="#">Nueva Transacciòn</a>
+                <a href="#">Salir</a>    
+            </nav>
+            
+            
+        </header>
+        {% endblock%}
+
+{% block main  %}
+<section >
+    <div class="content-table">
+        <table class="table table-fixed">
+             <thead>
+                 <div class="table-tittle">
+                      <h5> Historial De Transacciones</h5>
+                 </div>
+                 <tr class="content-tr">
+                         <th scope="col">#</th>
+                         <th scope="col">fecha</th>
+                         <th scope="col">Producto origen </th>
+                         <th scope="col">Producto destino </th>
+                         <th scope="col">monto</th>
+                         <th scope="col">estado</th>
+                 </tr>
+             </thead>
+             <tbody class="content-tbody">
+
+                 <tr>
+                     <td>1</td>
+                     <td>10/11/2021</td>
+                     <td>11111111111 </td>
+                     <td>22222222222 </td>
+                     <td>$ 1.000.000</td>
+                     <td>Aprobado</td>
+
+                 </tr>
+
+                     <tr>
+                     <td>2</td>
+                     <td>10/11/2021</td>
+                     <td>11111111111 </td>
+                     <td>22222222222 </td>
+                     <td>$ 1.000.000</td>
+                     <td>Aprobado</td>
+                 </tr>
+                 <tr>
+                     <td>3</td>
+                     <td>10/11/2021</td>
+                     <td>11111111111 </td>
+                     <td>22222222222 </td>
+                     <td>$ 1.000.000</td>
+                     <td>Aprobado</td>
+                 </tr>
+                     <tr>
+                     <td>4</td>
+                     <td>10/11/2021</td>
+                     <td>11111111111 </td>
+                     <td>22222222222 </td>
+                     <td>$ 1.000.000</td>
+                     <td>Aprobado</td>
+                 </tr>
+                 <tr>
+                     <td>5</td>
+                     <td>10/11/2021</td>
+                     <td>11111111111 </td>
+                     <td>22222222222 </td>
+                     <td>$ 1.000.000</td>
+                     <td>Aprobado</td>
+                 </tr>
+                 <tr>
+                     <td>6</td>
+                     <td>10/11/2021</td>
+                     <td>11111111111 </td>
+                     <td>22222222222 </td>
+                     <td>$ 1.000.000</td>
+                     <td>Aprobado</td>
+                 </tr>
+                 <tr>
+                     <td>7</td>
+                     <td>10/11/2021</td>
+                     <td>11111111111 </td>
+                     <td>22222222222 </td>
+                     <td>$ 1.000.000</td>
+                     <td>Aprobado</td>
+                 </tr>
+                 <tr>
+                     <td>8</td>
+                     <td>10/11/2021</td>
+                     <td>11111111111 </td>
+                     <td>22222222222 </td>
+                     <td>$ 1.000.000</td>
+                     <td>Aprobado</td>
+                 </tr>
+
+             </tbody>
+         </table>
+
+     </div>
+</section>
+<section>
+<figure class="contenedor-ima">
+      
+      <img  class="img-historialtransacciones" src=" {% static 'img/transaccion.jpg'%}" alt=""/>
+ </figure>
+</section>
+
+
+</main>
+{% endblock %}

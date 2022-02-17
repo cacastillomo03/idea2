@@ -1,0 +1,57 @@
+{% extends 'base/index.html'%}
+{% load static %}
+{% block header %}
+<header class="header" id="inicio">
+    <div ><button class="ingresar" >Cerrar Sesion</button></div>
+    <h1 class="slogan"> <span style="color:black">B.S Patrick</span></h1>
+    <nav class="menu_navegacion ">
+        <img src="{% static 'img/logo.png' %}" alt="" class="logo">
+        <a href="#">Inicio</a>
+        <a href="#">Transacciones</a>
+        <a href="#">Resumen</a>
+        <a href="#">Ayuda</a>    
+    </nav>
+</header>   
+ {% endblock%}
+
+{% block main%}
+<main>
+    <div class="table-tittle">
+        <h5> Transferir Dinero </h5>
+    </div>
+     <form class="contenedor-form">
+         
+         <div class="content-form">
+             <input  type="text" required=""  />
+             <label class="lbl">
+                 <span class="text-name"> Ingrise Producto Oreigen</span>
+             </label>
+         </div>
+         <div class="content-form">
+             <input type="text" required=""  />
+             <label class="lbl">
+                 <span class="text-name"> Ingrise Producto Destino</span>
+             </label>
+         </div>
+         <div class="content-form">
+             <input  type="text" required=""  />
+             <label class="lbl">
+                 <span class="text-name"> Ingrise Valor</span>
+             </label>
+         </div>
+             
+         
+       <div class="botton-form">
+           <input class="botton-form_input" type="submit"  />
+         </div>
+     </form>
+   <section>
+        <figure >
+              
+            <img  class="img-nuevatransaccion" src=" {% static 'img/transaccion.jpg'%}" alt=""/>
+           
+         </figure>
+    </section>
+    
+ </main>
+{% endblock%}

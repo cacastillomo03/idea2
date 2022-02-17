@@ -11,7 +11,7 @@ root{
 /* cabecesra de la barra de navegacion*/
 .header{
      height: 80vh;
-     background-image: linear-gradient(to top, rgb(160,140,209,0.5)0%, rgb(160,140,209,0.5)100% ),url(../Imagenes/Cabecera/img_cabecera.jpg);
+     background-image: linear-gradient(to top, rgb(160,140,209,0.5)0%, rgb(160,140,209,0.5)100% ),url(/static/img/img_cabecera.jpg);
      background-repeat: no-repeat;
      background-size: cover;
      background-attachment: fixed;
