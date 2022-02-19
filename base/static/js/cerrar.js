@@ -16,6 +16,8 @@ cancelar.addEventListener('click',()=>{
  ventana.classList.toggle("spread");
 });
 
-salir.addEventListener('click', ()=>{      
+salir.addEventListener('click', ()=>{    
+    
+    window.open("http://localhost:8000/inicio/","_self").close()   
 
 });

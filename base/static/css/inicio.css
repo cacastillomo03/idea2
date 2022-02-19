@@ -22,7 +22,7 @@ root{
 /* configuracion del titulo del header*/
 .tittle{
      color: white;
-     margin-top: 14%;
+     margin-top: 10%;
      margin-left: 5%;
      font-size: 60px;  
 }
@@ -73,7 +73,13 @@ root{
    right:  10%;  
    text-transform: uppercase;
    text-decoration: none;
+   top: -8px;
 }
+.menu_navegacion a:hover{
+    color:blue;
+    text-decoration-line:underline;
+    font-weight: bold;
+ }
 /* configuracion boton Ingresar Ahora*/
 
 .ingresar{
@@ -92,6 +98,23 @@ root{
 .ingresar:hover {
     font-weight: bold; 
     
+}
+
+.button-ingresar{
+    position: absolute;
+    top: 3%;
+    right: 8%;
+    height: 40px;
+    width: 15%;
+    background:yellow;
+    border-radius: 10px;
+    border-style: none;
+    cursor: pointer;
+    font-family: arial;
+    font-size: 15px;  
+}
+.button-ingresar:hover{
+    font-weight: bold;
 }
 /* ESTRUCTURA DEL MAIN VENTANA LOGIN*/
     .form-login h5{
@@ -618,9 +641,6 @@ width: 100%;
 }
 /*ESTRUCTURA MAIN VENTANA VER SALDO*/
 
-
-/*FOOTER DEL APLICATIVO*/
-
 ul{
     
    position: absolute;
@@ -669,6 +689,7 @@ ul{
     right: 8%;
     height: 40px;
     width: 20%;
+    text-decoration: none;
     background:yellow;
     border-radius: 10px;
     border-style: none;
@@ -680,7 +701,7 @@ ul{
   font-weight: bold; 
     
 }
-
+/*FOOTER DEL APLICATIVO*/
   footer{
          background: white;
          padding-bottom: 0.1px;
@@ -815,46 +836,32 @@ ul{
          top: 5%;
     }
 
+  .contenido-ventana{
+      width: 100%;
+      height: 40%;
+  }
+  .text-header{
+      background:yellow;
+      color: #000;
+  }
+
+  .header-text{
+      width: 80%;
+      margin-top: 3%;
+  }
+  .tittle{
+      font-size: 45px;
+      margin-top: 35%;
+  }
+
+  
+
 }
 
 /* RESPONSIVE VENTANA LOGIN*/
 
 @media screen and (max-width:1200px){
-  .menu_navegacion{
-          width: 100vw;
-          height: 20%;
-          
-    }
-  .menu_navegacion a{
-         font-size: 15px;
-         width: 70%;
-         left: 20px;
-    }
-  .logo{
-         max-width: 50px;
-         max-height: 50px;
-         top: 25px;
-         left: 10px;
-    }
-     
-  .slogan{
-         font-size: 30px;
-         width: 80%;
-         margin-top: 18px;
-         margin-left: 20px;
-    }
-     
-  .ingresar{
-         max-width: 20%;
-         max-height: 30%;
-         font-size: 80%;
-         top: 5%;
-         cursor: pointer;
-    }
-  .ingresar:hover{
-         font-weight: bold;
-    }
-     
+   
   .form-login{
          top: 17%;
     }
@@ -863,40 +870,11 @@ ul{
 }
 
 @media screen and (max-width:750px){
-  .menu_navegacion{
-          width: 100vw;
-          height: 15%;
-          
-    }
-  .menu_navegacion a{
-         font-size: 10px;
-         width: 50%;
-         left: 20px;
-    }
-  .logo{
-         max-width: 30px;
-         max-height: 50px;
-         top: 22px;
-         left: 3px;
-    }
-     
-  .slogan{
-         font-size: 20px;
-         width: 50%;
-         margin-top: 20px;
-         margin-left: 15px;
-         top: 11px;
-    }
-     
-  .ingresar{
-         max-width: 10%;
-         max-height: 30%;
-         font-size: 70%;
-         top: 3%;
-    }
+ 
   .form-login{
+         height: 60%;
          left: 40px;
-         top: 13.5%;
+         top: 17.5%;
     }
 
 }
@@ -904,39 +882,7 @@ ul{
 /* RESPONSIVE VENTANA NUEVA TRANSACCION */
 
 @media screen and (max-width:1200px){
-  .menu_navegacion{
-         width: 100vw;
-         height: 20%;
-    }
-  .menu_navegacion a{
-         font-size: 15px;
-         width: 70%;
-         left: 20px;
-   }
-  .logo{
-         max-width: 50px;
-         max-height: 60px;
-         top: 25px;
-         left: 10px;
-    }
-     
-  .slogan{
-         font-size: 30px;
-         width: 80%;
-         margin-top: 18px;
-         margin-left: 20px;
-   }
-     
-  .ingresar{
-         max-width: 20%;
-         max-height: 30%;
-         font-size: 80%;
-         top: 5%;
-         cursor: pointer;
-    }
-  .ingresar:hover{
-         font-weight: bold;
-    }
+  
      
   .contenedor-form{
          width: 40%;
@@ -946,37 +892,7 @@ ul{
 }
 
 @media screen and (max-width:750px){
-  .menu_navegacion{
-          width: 100vw;
-          height: 15%;
-          
-    }
-  .menu_navegacion a{
-         font-size: 10px;
-         width: 50%;
-         left: 20px;
-         padding: 0 8px;
-    }
-  .logo{
-         max-width: 30px;
-         max-height: 50px;
-         top: 20px;
-         left: 3px;
-    }
-     
-  .slogan{
-         font-size: 20px;
-         width: 50%;
-         margin-top: 10px;
-         margin-left: 15px;
-    }
-     
-  .ingresar{
-         max-width: 10%;
-         max-height: 30%;
-         font-size: 70%;
-         top: 3%;
-    }
+  
      
   .img-nuevatransaccion{
          transform: translate(110%);
@@ -992,43 +908,7 @@ ul{
 /*RESPONSIVE VENTANA TRANSACCIONES*/
 
 @media screen and (max-width:1200px){
-    .menu_navegacion{
-          width: 100vw;
-          height: 20%;
-          
-          
-
-
-     }
-     .menu_navegacion a{
-         font-size: 15px;
-         width: 70%;
-         left: 20px;
-     }
-     .logo{
-         max-width: 50px;
-         max-height: 60px;
-         top: 25px;
-         left: 10px;
-     }
-     
-     .slogan{
-         font-size: 30px;
-         width: 80%;
-         margin-top: 18px;
-         margin-left: 20px;
-     }
-     
-     .ingresar{
-         max-width: 20%;
-         max-height: 30%;
-         font-size: 80%;
-         top: 5%;
-         cursor: pointer;
-     }
-     .ingresar:hover{
-         font-weight: bold;
-     }
+    
      
      .content-table{
          width: 100%;
@@ -1050,38 +930,7 @@ ul{
 }
 
 @media screen and (max-width:750px){
-    .menu_navegacion{
-          width: 100vw;
-          height: 15%;
-          
-     }
-     .menu_navegacion a{
-         font-size: 10px;
-         width: 50%;
-         left: 20px;
-         padding: 0 8px;
-     }
-     .logo{
-         max-width: 30px;
-         max-height: 50px;
-         top: 22px;
-         left: 3px;
-     }
-     
-     .slogan{
-         font-size: 20px;
-         width: 50%;
-         margin-top: 20px;
-         margin-left: 15px;
-         top: 11px;
-     }
-     
-     .ingresar{
-         max-width: 10%;
-         max-height: 30%;
-         font-size: 70%;
-         top: 3%;
-     }
+    
      
      .img-historialtransacciones{
          transform: translate(110%);
@@ -1117,43 +966,7 @@ ul{
 /* RESPONSIVE VENTANA VER SALDO*/
 
 @media screen and (max-width:1200px){
-    .menu_navegacion{
-          width: 100vw;
-          height: 20%;
-          
-          
-
-
-     }
-     .menu_navegacion a{
-         font-size: 15px;
-         width: 70%;
-         left: 20px;
-     }
-     .logo{
-         max-width: 50px;
-         max-height: 60px;
-         top: 25px;
-         left: 10px;
-     }
-     
-     .slogan{
-         font-size: 30px;
-         width: 80%;
-         margin-top: 18px;
-         margin-left: 20px;
-     }
-     
-     .ingresar{
-         max-width: 20%;
-         max-height: 30%;
-         font-size: 80%;
-         top: 5%;
-         cursor: pointer;
-     }
-     .ingresar:hover{
-         font-weight: bold;
-     }
+   
      .saldo{
          width: 60%;
      }
@@ -1180,38 +993,7 @@ ul{
 }
 
 @media screen and (max-width:750px){
-    .menu_navegacion{
-          width: 100vw;
-          height: 15%;
-          
-     }
-     .menu_navegacion a{
-         font-size: 10px;
-         width: 50%;
-         left: 20px;
-         padding: 0 8px;
-     }
-     .logo{
-         max-width: 30px;
-         max-height: 50px;
-         top: 20px;
-         left: 3px;
-     }
-     
-     .slogan{
-         font-size: 20px;
-         width: 50%;
-         margin-top: 10px;
-         margin-left: 15px;
-     }
-     
-     .ingresar{
-         max-width: 10%;
-         max-height: 30%;
-         font-size: 70%;
-         top: 3%;
-     }
-     
+    
      .saldo{
          width: 90%;
      }
